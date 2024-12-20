@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка 403</title>
+    <!-- Подключение шрифта Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #container {
+            max-width: 600px;
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 4.5em; /* Размер шрифта по умолчанию */
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        p {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5em; /* Размер шрифта по умолчанию */
+            line-height: 1.6;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: black;
+            margin: 20px 0;
+        }
+
+        /* Адаптивные стили для мобильных устройств */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em; /* Уменьшенный размер заголовка */
+            }
+            p {
+                font-size: 1.2em; /* Уменьшенный размер текста */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em; /* Ещё меньший размер для телефонов */
+            }
+            p {
+                font-size: 1em; /* Уменьшенный текст для маленьких экранов */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Error 403</h1>
+        <p>Этот сайт доступен только с компьютера.</p>
+        <hr>
+        <p>Вы видите это сообщение, потому что ваш браузер определен как мобильное устройство. Сайт разработан  только для версии ПК.</p>
+    </div>
+</body>
+</html>
