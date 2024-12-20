@@ -6,6 +6,8 @@
     <title>Ошибка 403</title>
     <!-- Подключение шрифта Merriweather -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -13,47 +15,55 @@
             background-color: white;
             color: black;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             height: 100vh;
-            text-align: center;
+            text-align: left;
             box-sizing: border-box;
         }
+
         #container {
             max-width: 600px;
+            text-align: left;
+            display: flex;
+            flex-direction: column; /* Элементы по колонке */
+            align-items: flex-start;
         }
-        h1 {
-            font-family: 'Merriweather', serif;
-            font-size: 4.5em; /* Размер шрифта по умолчанию */
-            margin-bottom: 10px;
-            font-weight: 700;
+
+        .fa-triangle-exclamation {
+            color: gray; /* Серый цвет для иконки */
+            font-size: 10em; /* Размер иконки */
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px; /* Отступ снизу */
         }
+
+
         p {
+            font-weight: bold;
             font-family: 'Merriweather', serif;
-            font-size: 1.5em; /* Размер шрифта по умолчанию */
+            font-size: 1.5em;
             line-height: 1.6;
         }
+
         hr {
             border: 0;
-            height: 2px;
+            height: 1px;
             background-color: black;
             margin: 20px 0;
+            width: 100%; /* Линия на всю ширину */
         }
 
         /* Адаптивные стили для мобильных устройств */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 3em; /* Уменьшенный размер заголовка */
-            }
+           
             p {
                 font-size: 1.2em; /* Уменьшенный размер текста */
             }
         }
 
         @media (max-width: 480px) {
-            h1 {
-                font-size: 2.5em; /* Ещё меньший размер для телефонов */
-            }
+           
             p {
                 font-size: 1em; /* Уменьшенный текст для маленьких экранов */
             }
@@ -62,10 +72,19 @@
 </head>
 <body>
     <div id="container">
-        <h1>Error 403</h1>
-        <p>Этот сайт доступен только с компьютера.</p>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>
+            <i class="fa-solid fa-computer"></i> Этот сайт доступен только с компьютера.
+        </p>
+        
         <hr>
-        <p>Вы видите это сообщение, потому что ваш браузер определен как мобильное устройство. Сайт разработан  только для версии ПК.</p>
+        
+        <p>
+            <i class="fa-solid fa-computer"></i> <span style="font-weight: normal;">Этот веб-сервис не оптимизирован для мобильных браузеров.</span>
+        </p>
+        
+
+        
     </div>
 </body>
 </html>
